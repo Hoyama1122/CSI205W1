@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 1px solid #ccc;
+  margin-top: 40px;
+  padding: 40px;
+
+  min-width: 750px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-address h1,
+.invoice-title h1 {
+  margin: 0;
+}
+.logo-img {
+  margin: 0;
+}
+.logo-name {
+  display: flex;
+  align-items: center;
+  color: #254774;
+  font-size: 24px;
+  width: 300px;
+}
+.text-address {
+  margin: 0;
+  line-height: 0px;
+}
+.title-invoice {
+  margin: 0;
+  text-align: end;
+  color: #254774;
+  font-size: 48px;
+}
+
+.subheader {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: r;
+  margin-top: 20px;
+}
+.subheader-customer {
+  display: flex;
+  justify-content: space-between;
+  line-height: 3.5px;
+  font-size: 14px;
+}
+.customer-info {
+  border: 1px solid #295a9c;
+  padding: 8px;
+  border-radius: 5px;
+}
+.customer-info-right {
+  width: 300px;
+  border: 1px solid #295a9c;
+  padding: 8px;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+.table-invoice-information {
+  padding: 15px;
+  line-height: 1.5px;
+  font-weight: normal;
+  margin-bottom: 0px;
+  background-color: #254774;
+  color: #fff;
+}
+.sub-text-header {
+  font-size: 12px;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 200;
+}
+tbody {
+  text-align: center;
+}
+td {
+  padding: 15px;
+  line-height: 1.5px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.table-invoice-total {
+  font-size: 14px;
+}
