@@ -102,3 +102,7 @@ td {
 .table-invoice-total {
   font-size: 14px;
 }
+
+.text-invoice {
+  font-weight: 500;
+}
