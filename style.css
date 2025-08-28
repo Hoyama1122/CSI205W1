@@ -106,3 +106,71 @@ td {
 .text-invoice {
   font-weight: 0;
 }
+.total-price {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.box-invoice-information {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+}
+.box-invoice-information p {
+  margin: 0;
+  padding: 0;
+}
+
+.box-invoice-first {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0;
+}
+
+.font-bold {
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+}
+.text-sub {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+.box-invoice-first{
+  margin-top: 5px;
+  border-bottom: 1px solid #ccc;
+  
+}
+.box-invoice-second{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.box-invoice-second-right{
+  display: flex;
+  justify-content: space-between;
+  width: 310px;
+}
+.box-invoice-second-left {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;    /* วาง p เรียงแนวตั้ง */
+  justify-content: center;   /* จัดกึ่งกลางแนวตั้ง */
+  align-items: flex-start;     /* ชิดขวา */
+  text-align: left;         /* ให้ข้อความชิดขวาภายใน p */
+}
+.box-invoice-second-right-item{
+  display: flex;
+  width: 310px;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  
+}
+.box-invoice-second-right-item-right{
+  margin-right: 10px;
+}
