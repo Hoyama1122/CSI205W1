@@ -11,12 +11,16 @@
       <!-- Header -->
       <div class="header">
         <div class="logo-address">
-          <img src="./logo.png" alt="" class="logo-img" />
-          <h1 class="logo-name">Larana, Inc.</h1>
+          <img src=".logo-img" alt="" class="logo-img" />
+          <h1 class="logo-name" id="company-name"></h1>
           <div class="text-address">
-            <p>23 Anywhere Street, Anytown, USA</p>
-            <p>โทรศัพท์: 123-456-789</p>
-            <p>อีเมล: 0oT3I@example.com</p>
+            <p><span class="company-address"></span></p>
+            <div style="line-height: 5px; margin-top: -10px">
+              <p>โทรศัพท์ : <span class="company-address"></span></p>
+              <p style="margin-top: -6px">
+                อีเมล: <span class="company-address"></span>
+              </p>
+            </div>
           </div>
         </div>
         <div class="invoice-title">
@@ -28,17 +32,21 @@
       <div class="subheader">
         <div class="subheader-customer">
           <div class="customer-info">
-            <p>ชื่อลูกค้า : แอดไลน์ เซ็นเตอร์</p>
-            <p style="color: #254774">Cussomer :</p>
-            <p>ที่อยู่ : 23 Anywhere Street, Anytown, USA</p>
-            <p style="color: #254774">Address :</p>
+            <p>ชื่อลูกค้า : <span class="customer-name-th"></span></p>
+            <p style="color: #254774">
+              Cussomer : <span class="customer-name-en"></span>
+            </p>
+            <p>ที่อยู่ : <span id="customer-address-th"></span></p>
+            <p style="color: #254774">
+              Address : <span id="customer-address-en"></span>
+            </p>
             <p>เลขประจําตัวผู้เสียภาษี : 123-456-789</p>
           </div>
           <div class="customer-info-right">
-            <p>เลขที่: 01234</p>
-            <p style="color: #254774">No :</p>
-            <p>วันที่: 01/01/2023</p>
-            <p style="color: #254774">Date :</p>
+            <p >เลขที่: <span id="invoice-number-th"></span></p>
+            <p style="color: #254774" >No <span id="invoice-number-en"></span></p>
+            <p >วันที่: <span id="invoice-date-th"></span></p>
+            <p style="color: #254774" >Date : <span id="invoice-date-en"></span></p>
           </div>
         </div>
       </div>
@@ -46,7 +54,7 @@
 
       <table>
         <thead>
-          <tr class="table-invoice">
+          <tr class="table-invoice" >
             <th class="table-invoice-information">
               ลำดับ <br />
               <p class="sub-text-header">Item</p>
@@ -74,9 +82,9 @@
             </th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="invoice-table">
           <tr>
-            <td class="table-invoice">1</td>
+            <td class="table-invoice"">1</td>
             <td class="table-invoice">บริการออกแบบเว็บไซต์</td>
             <td class="table-invoice">1</td>
             <td class="table-invoice">งาน</td>
@@ -98,39 +106,7 @@
             <td class="table-invoice">ลำ</td>
             <td class="table-invoice">50,000,00</td>
             <td class="table-invoice">250,000.00</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
+          
         </tbody>
       </table>
       <!-- Box invoice information -->
@@ -149,7 +125,7 @@
             <p class="text-sub">Subtotal</p>
           </div>
           <div>
-            <p class="" style="margin-top: 13px; margin-right: 10px">
+            <p class="" style="margin-top: 13px; margin-right: 10px" id="total-amount">
               310,000,000
             </p>
           </div>
@@ -169,7 +145,7 @@
                   <p class="text-sub">Discount</p>
                 </div>
                 <div class="box-invoice-second-right-item-right">
-                  <p style="margin-top: 10px">100,000</p>
+                  <p style="margin-top: 10px" id="discount-amount">100,000</p>
                 </div>
               </div>
               <div class="box-invoice-second-right-item">
@@ -178,7 +154,7 @@
                   <p class="text-sub">After Discount</p>
                 </div>
                 <div class="box-invoice-second-right-item-right">
-                  <p style="margin-top: 10px">10,000,000</p>
+                  <p style="margin-top: 10px" id="total-amount-discount">10,000,000</p>
                 </div>
               </div>
               <div class="box-invoice-second-right-item">
@@ -187,7 +163,7 @@
                   <p class="text-sub">Value Added Tax</p>
                 </div>
                 <div class="box-invoice-second-right-item-right">
-                  <p style="margin-top: 10px">800,000</p>
+                  <p style="margin-top: 10px" id="tax-amount">800,000</p>
                 </div>
               </div>
               <div class="box-invoice-second-right-item">
@@ -204,8 +180,9 @@
                       display: flex;
                       justify-content: center;
                       align-items: center;
-                    ">
-                    <p>7,000,000</p>
+                    "
+                  >
+                    <p id="total-amount-tax">7,000,000</p>
                   </div>
                 </div>
               </div>
@@ -214,8 +191,21 @@
         </div>
       </div>
       <div>
-        
+        <div class="signature-section">
+          <div class="signature-box">
+            <div class="signature-line"></div>
+            <p>ผู้รับสินค้า / Received</p>
+            <p>วันที่ / Date __________</p>
+          </div>
+          <div class="signature-box">
+            <div class="signature-line"></div>
+            <p>ผู้ส่งสินค้า / Delivery by</p>
+            <p>วันที่ / Date __________</p>
+          </div>
+        </div>
       </div>
     </div>
+    <!-- <script src="data.js"></script> -->
+    <script src="index.js"></script>
   </body>
 </html>

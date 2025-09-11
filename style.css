@@ -28,6 +28,8 @@ body {
 }
 .logo-img {
   margin: 0;
+  width: 120px;
+  height: 75px;
 }
 .logo-name {
   display: flex;
@@ -37,8 +39,8 @@ body {
   width: 300px;
 }
 .text-address {
-  margin: 0;
-  line-height: 0px;
+margin: 0;
+  line-height: 16px;
 }
 .title-invoice {
   margin: 0;
@@ -139,18 +141,17 @@ td {
   color: #777;
   margin-top: 5px;
 }
-.box-invoice-first{
+.box-invoice-first {
   margin-top: 5px;
   border-bottom: 1px solid #ccc;
-  
 }
-.box-invoice-second{
+.box-invoice-second {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 10px;
 }
-.box-invoice-second-right{
+.box-invoice-second-right {
   display: flex;
   justify-content: space-between;
   width: 310px;
@@ -159,18 +160,41 @@ td {
   width: 300px;
   height: 200px;
   display: flex;
-  flex-direction: column;    /* วาง p เรียงแนวตั้ง */
-  justify-content: center;   /* จัดกึ่งกลางแนวตั้ง */
-  align-items: flex-start;     /* ชิดขวา */
-  text-align: left;         /* ให้ข้อความชิดขวาภายใน p */
+  flex-direction: column; /* วาง p เรียงแนวตั้ง */
+  justify-content: center; /* จัดกึ่งกลางแนวตั้ง */
+  align-items: flex-start; /* ชิดขวา */
+  text-align: left; /* ให้ข้อความชิดขวาภายใน p */
 }
-.box-invoice-second-right-item{
+.box-invoice-second-right-item {
   display: flex;
   width: 310px;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
-  
 }
-.box-invoice-second-right-item-right{
+.box-invoice-second-right-item-right {
   margin-right: 10px;
+}
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.signature-box {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #254774;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 14px;
+  padding: 20px;
+}
+
+.signature-line {
+  border-top: 1px dashed #000;
+  
+  margin-top: 10px;
 }
